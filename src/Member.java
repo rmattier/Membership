@@ -24,7 +24,7 @@ public class Member {
 
     public Member() {}
 
-    // Mutators
+    // Mutators - setters
     public void setId(String ids)               { this.id                               = ids;              }
     public void setFirstName(String fname)      { this.firstName                        = fname;            }
     public void setLastName(String lname)       { this.lastName                         = lname;            }
@@ -35,7 +35,7 @@ public class Member {
     public void setZipCode(String zip)          { this.zipCode                          = zip;              }
     public void setImagePath(String image)      { this.imagePath                        = image;            }
 
-    //Accessors
+    //Accessors - getters
     public String getId()                       { return (id);                                              }
     public String getFirstName()                { return (firstName);                                       }
     public String getLastName()                 { return (lastName);                                        }
