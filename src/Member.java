@@ -22,6 +22,14 @@ public class Member {
     private String zipCode;
     private String imagePath                = "None";
 
+
+    public Member(String fname,String lname,Strign mail) {
+        this.firstName           = fname;
+        this.lastName            = lname;
+        this.email               = mail;
+
+    }
+
     public Member() {}
 
     // Mutators - setters
