@@ -66,5 +66,5 @@
 </project>
 
 
-<!-- In order to install the dependencies and stuff run: mvn install dependency:copy-deoendencies
+<!-- In order to install the dependencies and stuff run: mvn install dependency:copy-dependencies
      Also, make sure to configure the proxy settings in maven settings.xml -->
