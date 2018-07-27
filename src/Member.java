@@ -1,18 +1,25 @@
 import com.fasterxml.jackson.annotation.JsonPropertyOrder;
 import com.fasterxml.jackson.annotation.JsonProperty;
 
+import javax.persistence.*;
+@Table(name="member")
 @JsonPropertyOrder({ "id", "firstname","lastname","email", "address" })
 public class Member {
 
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     @JsonProperty("id")
     private String id;
 
+    @Column(name = "firstname")
     @JsonProperty("firstname")
     private String firstName;
 
+    @Column(name = "lastname")
     @JsonProperty("lastname")
     private String lastName;
 
+    @Column(name = "email")
     @JsonProperty("email")
     private String email;
 
@@ -23,7 +30,7 @@ public class Member {
     private String imagePath                = "None";
 
 
-    public Member(String fname,String lname,Strign mail) {
+    public Member(String fname,String lname,String mail) {
         this.firstName           = fname;
         this.lastName            = lname;
         this.email               = mail;
