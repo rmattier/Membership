@@ -11,7 +11,7 @@
             <!-- The JDBC driver of your database -->
             <property name="javax.persistence.jdbc.driver" value="org.postgresql.Driver" />
             <!-- The JDBC URL to the database instance -->
-            <property name="javax.persistence.jdbc.url" value="jdbc:postgresql://localhost:5432/testDB" />
+            <property name="javax.persistence.jdbc.url" value="jdbc:postgresql://localhost:5432/testdb" />
             <!-- The database username -->
             <property name="javax.persistence.jdbc.user" value="testuser" />
             <!-- The database password -->
